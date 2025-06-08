@@ -1,0 +1,202 @@
+/* ----- Base Styles ----- */
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #eaf6f6, #ffffff);
+    color: #333;
+  }
+  
+  /* ----- Title Header Styles ----- */
+  #title {
+    background-color: #d1f0ff;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  #title p {
+    margin: 5px 0 0;
+    padding-top: 5px;
+    font-weight: 500;
+    font-size: 1.0rem;
+  }
+  
+  #title h1 {
+    margin: 5px 0;
+    font-size: 1.7rem;
+    white-space: normal;
+  }
+  
+  /* ----- Form Styles ----- */
+  form {
+    background: linear-gradient(120deg, #f0f9f4 0%, #f5fbf7 50%, #eef8f2 100%);
+    width: 95%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  
+  form label {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  
+  /* ----- Input and Select Styles ----- */
+  input, select {
+    width: calc(100% - 12px);
+    max-width: 100%;
+    padding: 8px;
+    border: 1px solid #b6d4d4;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+  }
+  
+  /* ----- Button Container Styles ----- */
+  #button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  /* ----- Button Styles ----- */
+  button, #input-button, input[type="submit"] {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button:hover, #input-button:hover, input[type="submit"]:hover {
+    background-color: #2fbdaa;
+    color: white;
+    border-color: #2fbdaa;
+  }
+  
+  /* ----- Holiday Cards Styles ----- */
+  main {
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  section {
+    background: #fffefb;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 350px;
+    min-width: 200px;
+    height: auto;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+  }
+  
+  h3 {
+    margin-top: 8px;
+    color: #2fbdaa;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
+  p {
+    font-size: 1.0rem;
+    color: #555;
+    margin-bottom: 6px;
+  }
+  
+  .first-choice {
+    color: #888;
+  }
+  
+  ::placeholder {
+    color: #bbb;
+  }
+  
+  /* ----- Footer Styles ----- */
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.0rem;
+    color: gray;
+  }
+  
+  .footer a {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+  
+  /* ----- Special Button Styles ----- */
+  #reset-button, #today-button {
+    background-color: #2fbdaa;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ----- Responsive Design ----- */
+  @media only screen and (max-width: 768px) {
+    section {
+      width: 90%;
+    }
+    
+    #title h1 {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    #title h1 {
+      font-size: 1.2rem;
+    }
+    form {
+      padding: 10px;
+    }
+    #button-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    button, #input-button, input[type="submit"] {
+      width: 100%;
+      margin-bottom: 5px;
+      font-size: 0.9rem;
+      padding: 10px 15px;
+    }
+    section {
+      width: 95%;
+    }
+  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChronoFest</title>
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Title Section -->
+  <div id="title">
+    <p>Need something to celebrate...?</p>
+    <h1>ChronoFest: Where Culture, Code, and Calendars Collide</h1>
+  </div>
+  <!-- Form Section -->
+  <form>
+    <label for="country-input">Country (required):</label>
+    <select id="country-input" class="first-choice">
+      <option class="first-choice">Please Choose a Country</option>
+    </select>
+    <label for="year-input">Year (required):</label>
+    <input type="number" id="year-input" min="1500" max="2049" placeholder="Year from 1900-2049" />
+    <label for="month-input">Month (optional):</label>
+    <select id="month-input" class="first-choice">
+      <option value="">Choose Month or leave this option</option>
+      <option value="1">January</option>
+      <option value="2">February</option>
+      <option value="3">March</option>
+      <option value="4">April</option>
+      <option value="5">May</option>
+      <option value="6">June</option>
+      <option value="7">July</option>
+      <option value="8">August</option>
+      <option value="9">September</option>
+      <option value="10">October</option>
+      <option value="11">November</option>
+      <option value="12">December</option>
+    </select>
+    <label for="day-input">Day (optional):</label>
+    <input type="number" id="day-input" min="1" max="31" placeholder="Day from 1-31 or leave empty" />
+    <div id="button-container">
+      <input type="submit" value="Get Holidays" />
+      <button type="button" id="reset-button">Clear Holidays</button>
+      <button type="button" id="today-button">Use Today's Date</button>
+    </div>
+  </form>
+  <!-- Cards container to show holidays -->
+  <main id="card-container"></main>
+  <!-- Footer Section -->
+  <div class="footer">
+    <span>© 2025 ChronoFest | Developed by Poorna Sai Sriharsha
+      <a href="https://www.linkedin.com/in/poorna-sai-sriharsha-perina/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="color: #0A66C2;"></i></a>
+      <a href="https://github.com/Poorna-Sai-Sriharsha" target="_blank" title="GitHub"><i class="fab fa-github" style="color: #181717;"></i></a>
+    </span>
+  </div>
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
